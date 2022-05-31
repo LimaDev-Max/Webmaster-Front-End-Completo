@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+
+        /* nth-of-type(2) De acordo com tipo de Elemento 
+
+        ul li:nth-of-type(2) {
+            color: red;
+        }
+        */
+
+        /* nth-child(6) De acordo com os Elemento filhos
+
+        ul span:nth-child(6) {
+            color: green;
+        }
+        */
+
+
+        .box {
+            width: 100%;
+        }
+
+        .item {
+            box-sizing: border-box;
+            float: left;
+            width: 33.3%;
+            height: 300px;
+            background-color: red;
+            border: 1px solid black;
+        }
+
+         /* last-of-type Pega o último elemento do mesmo tipo 
+
+        .box > div:last-of-type p {
+            background-color: yellow;
+        }
+
+        .box > div:last-child p{
+            color: #fff;
+        }
+        */
+
+         /* ::after Aplica o comando antes!
+        .p::after {
+            content:' Felipe';
+            background-color: red;
+            margin-left: -9px;
+
+        }*/
+        
+        /* ::before ativa o comando depois!
+         .p::before {
+             content: 'fabio';
+         }
+        
+        */
+
+         .p::before {
+             content: 'fabio';
+         }
+
+    </style>
+</head>
+<body>
+   <div class="box">
+      <p class="p">ola meu nome é</p>
+   </div>
+</body>
+</html>
