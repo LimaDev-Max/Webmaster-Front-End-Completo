@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        .parent {
+            background-color:#c069;
+            width: 100%;
+            padding: 90px 0;
+            text-align: center;
+        }   
+
+        .item {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            margin: 20px 0;
+        }
+
+        /* 
+        Formula: Estamos dizendo que a cada 2 Elementos Aplique o estilo.
+
+        .parent > div:nth-of-type(2n + 1) > div.item{
+            background-color: red;
+        }
+
+        */
+
+        /*
+        Aplica o estilo No sempre no primeiro Elemento.
+
+        .parent div:first-child div.item {
+            background-color: green;
+        }*/
+
+        .parent p:first-of-type {
+            color: orange;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>Olá Mundo</p>
+        <div><div class="item"></div></div>
+        <div><div class="item"></div></div>
+        <div><div class="item"></div></div>
+        <div><div class="item"></div></div>
+        <div><div class="item"></div></div>
+        <p>Olá Mundo</p>
+    </div>
+</body>
+</html>
